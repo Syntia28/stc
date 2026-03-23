@@ -10,7 +10,7 @@
     <title>SUELO TECH CONTROL - Estudios de Suelos y Laboratorio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
   </head>
 
   <body class="bg-slate-50 text-gray-900 scroll-smooth">
@@ -48,31 +48,36 @@
                 <p class="text-cyan-300 text-xs font-bold tracking-widest">
                   INGENIERÍA Y CONSTRUCCIONES S.A.C.
                 </p>
-               
               </div>
             </div>
 
             <!-- Navegación Desktop -->
             <div class="hidden lg:flex items-center gap-1">
+              <a href="#inicio" class="navbar-link group">
+                <span class="relative">
+                  Inicio
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                </span>
+              </a>
+               <a href="#mision-vision" class="navbar-link group">
+                <span class="relative">
+                  Misión & Visión
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                </span>
+                 <a href="#nosotros" class="navbar-link group">
+                <span class="relative">
+                  Nosotros
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                </span>
               <a href="#servicios" class="navbar-link group">
                 <span class="relative">
                   Servicios
-                  <span
-                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-500 group-hover:w-full transition-all duration-300"
-                  ></span>
-                </span>
-              </a>
-              <a href="#laboratorio" class="navbar-link group">
-                <span class="relative">
-                  Laboratorio
-                  <span
-                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-500 group-hover:w-full transition-all duration-300"
-                  ></span>
-                </span>
-              </a>
-              <a href="#clientes" class="navbar-link group">
-                <span class="relative">
-                  Clientes
                   <span
                     class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-500 group-hover:w-full transition-all duration-300"
                   ></span>
@@ -86,15 +91,8 @@
                   ></span>
                 </span>
               </a>
-              <a href="#mision-vision" class="navbar-link group">
-                <span class="relative">
-                  Misión & Visión
-                  <span
-                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-teal-500 group-hover:w-full transition-all duration-300"
-                  ></span>
-                </span>
-              </a>
              
+              </a>
             </div>
 
             <!-- CTA Button Desktop y Separador -->
@@ -169,13 +167,13 @@
               <span>Laboratorio</span>
             </span>
           </a>
-          <a href="#clientes" class="mobile-nav-link">
+          <a href="#nosotros" class="mobile-nav-link">
             <span class="flex items-center gap-3">
               <span
                 class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500/20 to-teal-500/20 flex items-center justify-center"
-                >🏢</span
+                ></span
               >
-              <span>Clientes</span>
+              <span>Nosotros</span>
             </span>
           </a>
           <a href="#contacto" class="mobile-nav-link">
@@ -250,18 +248,21 @@
 
             <!-- Título principal -->
             <div>
+             <span
+              class="block text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400  to-white animate-pulse"
+              >¡Bienvenidos!</span
+>
               <h2
-                class="hero-title text-6xl md:text-7xl font-black leading-tight"
+                class="hero-title text-4xl md:text-6xl font-black leading-tight"
               >
-                <span class="block">STC</span>
                 <span
                   class="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-300 to-blue-400"
-                  >Suelo</span
+                  > Suelo Tech Control</span
                 >
-                <span class="block">Tech Control</span>
+                <span class="block">INGENIERIA Y CONSTRUCCION</span>
               </h2>
             </div>
-
+              <span class="block font-black">CONTROL TÉCNICO, RESULTADOS CONFIABLES</span>
             <!-- Descripción -->
             <p
               class="hero-description text-lg md:text-xl text-gray-200 leading-relaxed max-w-xl font-light"
@@ -298,7 +299,7 @@
               ejecución de obra, con compromiso, precisión y responsabilidad
               profesional.
             </p>
-
+             
             <!-- Botones mejorados -->
             <div class="flex flex-col sm:flex-row gap-4 pt-8">
               <a
@@ -362,691 +363,8 @@
         </div>
       </div>
     </section>
-
-    <!-- SERVICIOS SECTION (mejorado) -->
-    <section id="servicios" style="width: 100%;">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="section-title">Nuestros Servicios</h3>
-            <div class="section-divider"></div>
-            <p class="section-subtitle">
-                Soluciones integrales en ingeniería de suelos, laboratorio y gestión de proyectos
-            </p>
-
-            <!-- Grid de 3 categorías principales -->
-            <div class="grid">
-                <!-- CATEGORÍA 1: SERVICIOS GENERALES -->
-                <div class="category-card generales">
-                    <div class="service-icon">📋</div>
-                    <h4>SERVICIOS GENERALES</h4>
-                    <ul class="service-list">
-                        <li onclick="openServiceModal('Alquiler de moldes metálicos', 'Alquiler de moldes de alta calidad para ensayos de concreto y materiales de construcción. Disponibles en diversas dimensiones y configuraciones para proyectos de corto y largo plazo.')">• Alquiler de moldes metálicos.</li>
-                        <li onclick="openServiceModal('Estudios de mecánica de suelos y geotecnia', 'Análisis geotécnicos completos que incluyen perforaciones, muestreo, ensayos de laboratorio y reportes técnicos para determinar la capacidad portante del suelo y recomendaciones de cimentación.')">• Estudios de mecánica de suelos y geotecnia.</li>
-                        <li onclick="openServiceModal('Densidades de campo', 'Determinación de densidades in situ mediante métodos especializados como el cono de arena y equipo nuclear. Control de compactación para garantizar la calidad de terracerías y rellenos.')">• Densidades de campo.</li>
-                        <li onclick="openServiceModal('Diseño de mezclas y rotura de especímenes', 'Diseño de mezclas de concreto optimizadas según requerimientos del proyecto. Ensayos de compresión, tracción y flexión de probetas con certificación de resultados.')">• Diseño de mezclas y rotura de especímenes.</li>
-                        <li onclick="openServiceModal('Alquiler de equipo topográfico', 'Equipamiento topográfico de última generación: estaciones totales, GPS, niveles de precisión y accesorios. Incluye soporte técnico y calibración.')">• Alquiler de equipo topográfico.</li>
-                        <li onclick="openServiceModal('Elaboración y ejecución de expedientes técnicos', 'Documentación integral de proyectos: memorias descriptivas, planos, especificaciones técnicas, metrados, presupuestos y cronogramas de ejecución.')">• Elaboración y ejecución de expedientes técnicos.</li>
-                        <li onclick="openServiceModal('Supervisión y asesoría técnica en obras civiles', 'Supervisión especializada de obras civiles, control de calidad, asesoría en procesos constructivos y verificación del cumplimiento de especificaciones técnicas.')">• Supervisión y asesoría técnica en obras civiles.</li>
-                    </ul>
-                    <button class="toggle-services-btn" data-target="menu-generales">▼ Ver servicios adicionales</button>
-                    <div id="menu-generales" class="submenu-horizontal">
-                        <span class="submenu-item" onclick="openServiceModal('Alquiler de moldes especiales', 'Moldes para ensayos de concreto no estandarizados, fabricados según requerimientos específicos del cliente.')">Moldes especiales</span>
-                        <span class="submenu-item" onclick="openServiceModal('Estudios geotécnicos avanzados', 'Análisis de estabilidad de taludes, cimentaciones profundas y dinámica de suelos.')">Geotecnia avanzada</span>
-                        <span class="submenu-item" onclick="openServiceModal('Control de compactación', 'Ensayos de densidad y humedad in situ con equipo nuclear y cono de arena.')">Control compactación</span>
-                    </div>
-                </div>
-
-                <!-- CATEGORÍA 2: SERVICIOS PRINCIPALES -->
-                <div class="category-card principales">
-                    <div class="service-icon">🏗️</div>
-                    <h4>SERVICIOS PRINCIPALES</h4>
-                    <ul class="service-list">
-                        <li onclick="openServiceModal('Elaboración y ejecución de proyectos de ingeniería civil', 'Desarrollo integral de proyectos de ingeniería civil: diseños estructurales, hidráulicos, viales y sanitarios. Gestión de permisos y licencias.')">• Elaboración y ejecución de proyectos de ingeniería civil</li>
-                        <li onclick="openServiceModal('Estudios de Mecánica de Suelos y Geotecnia', 'Caracterización de perfiles de suelo, capacidad portante, estudios de cimentación, análisis de estabilidad y riesgo sísmico.')">• Estudios de Mecánica de Suelos y Geotecnia</li>
-                        <li onclick="openServiceModal('Tecnología y control de calidad del concreto y materiales', 'Evaluación de propiedades físicas y mecánicas de materiales de construcción. Control estadístico de calidad.')">• Tecnología y control de calidad del concreto y materiales</li>
-                        <li onclick="openServiceModal('Ensayos de laboratorio de suelos, agregados y concreto', 'Laboratorio especializado en ensayos de clasificación de suelos, resistencia de materiales y durabilidad del concreto.')">• Ensayos de laboratorio de suelos, agregados y concreto</li>
-                        <li onclick="openServiceModal('Estudios topográficos', 'Levantamientos topográficos, replanteos, curvas de nivel, secciones transversales y modelos digitales de terreno.')">• Estudios topográficos</li>
-                        <li onclick="openServiceModal('Inspección y supervisión técnica de obras civiles', 'Inspección permanente de obras, control de calidad, verificación de planos y especificaciones técnicas.')">• Inspección y supervisión técnica de obras civiles</li>
-                    </ul>
-                    <button class="toggle-services-btn" data-target="menu-principales">▼ Ver especialidades</button>
-                    <div id="menu-principales" class="submenu-horizontal">
-                        <span class="submenu-item" onclick="openServiceModal('Diseño estructural', 'Diseño de estructuras de concreto armado, acero y albañilería según normativa vigente.')">Diseño estructural</span>
-                        <span class="submenu-item" onclick="openServiceModal('Mecánica de rocas', 'Caracterización de macizos rocosos, clasificación geomecánica y recomendaciones de excavación.')">Mecánica de rocas</span>
-                        <span class="submenu-item" onclick="openServiceModal('Gestión de calidad', 'Implementación de sistemas de gestión de calidad para proyectos de construcción.')">Gestión de calidad</span>
-                    </div>
-                </div>
-
-                <!-- CATEGORÍA 3: ENSAYOS DE LABORATORIO MTC E -->
-                <div class="category-card ensayos">
-                    <div class="service-icon">🔬</div>
-                    <h4>ENSAYOS DE LABORATORIO MTC E</h4>
-                    <ul class="service-list">
-                        <li onclick="openServiceModal('Estudios de mecánica de suelos y geotecnia', 'Análisis geotécnicos completos que incluyen perforaciones, muestreo, ensayos de laboratorio y reportes técnicos para determinar la capacidad portante del suelo y recomendaciones de cimentación.')">• Estudios de mecánica de suelos y geotecnia.</li>
-                        <li onclick="openServiceModal('Densidades de campo', 'Determinación de densidades in situ mediante métodos especializados como el cono de arena y equipo nuclear. Control de compactación para garantizar la calidad de terracerías y rellenos.')">• Densidades de campo.</li>
-                        <li onclick="openServiceModal('Diseño de mezclas y rotura de especímenes', 'Diseño de mezclas de concreto optimizadas según requerimientos del proyecto. Ensayos de compresión, tracción y flexión de probetas con certificación de resultados.')">• Diseño de mezclas y rotura de especímenes.</li>
-                        <li onclick="openServiceModal('Alquiler de equipo topográfico', 'Equipamiento topográfico de última generación: estaciones totales, GPS, niveles de precisión y accesorios. Incluye soporte técnico y calibración.')">• Alquiler de equipo topográfico.</li>
-                        <li onclick="openServiceModal('Elaboración y ejecución de expedientes técnicos', 'Documentación integral de proyectos: memorias descriptivas, planos, especificaciones técnicas, metrados, presupuestos y cronogramas de ejecución.')">• Elaboración y ejecución de expedientes técnicos.</li>
-                        <li onclick="openServiceModal('Supervisión y asesoría técnica en obras civiles', 'Supervisión especializada de obras civiles, control de calidad, asesoría en procesos constructivos y verificación del cumplimiento de especificaciones técnicas.')">• Supervisión y asesoría técnica en obras civiles.</li>
-                    </ul>
-                    <button class="toggle-services-btn" data-target="menu-ensayos">▼ Ver normas aplicables</button>
-                    <div id="menu-ensayos" class="submenu-horizontal">
-                        <span class="submenu-item" onclick="openServiceModal('Normas Técnicas Peruanas (NTP)', 'Todos nuestros ensayos cumplen con las Normas Técnicas Peruanas (NTP) vigentes para garantizar la calidad y confiabilidad de los resultados.')">NTP</span>
-                        <span class="submenu-item" onclick="openServiceModal('Normas ASTM', 'Aplicamos estándares ASTM (American Society for Testing and Materials) internacionalmente reconocidos.')">ASTM</span>
-                        <span class="submenu-item" onclick="openServiceModal('Normas AASHTO', 'Cumplimos con especificaciones AASHTO para proyectos viales y de infraestructura de transporte.')">AASHTO</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mensaje de normas técnicas -->
-            <div style="text-align: center; margin: 2rem 0; padding: 1rem; background: #f8fafc; border-radius: 1rem;">
-              <p style="font-size: 1.1rem; color: #0b2b4f;">
-                <strong>Todos nuestros servicios se basan en normas técnicas vigentes:</strong> RNE, NTP, ASTM, AASHTO<br>
-                <small>Brindamos soporte técnico desde la etapa de estudio hasta la ejecución de obra, con compromiso, precisión y responsabilidad profesional.</small>
-              </p>
-            </div>
-
-        <!-- MODAL (movido dentro de #servicios.) -->
-        <div id="modal-overlay" class="modal-overlay">
-          <div class="modal-content">
-            <h3 id="modal-title">Título del Servicio</h3>
-            <p id="modal-desc">Descripción detallada del servicio seleccionado.</p>
-            <div id="modal-normas" class="modal-normas" style="display: none;">
-              <strong>Normas aplicables:</strong> <span id="normas-text"></span>
-            </div>
-            <div class="modal-buttons">
-              <button class="modal-btn btn-cerrar" onclick="closeModal()">Cerrar</button>
-              <button class="modal-btn btn-solicitar" onclick="solicitarServicio()">📱 Solicitar Servicio</button>
-            </div>
-          </div>
-        </div>
-
-      
-          </div>
-        </section>
-
-    <!-- LABORATORIO SECTION -->
-    <section id="laboratorio" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="space-y-6">
-            <h3 class="text-4xl font-bold text-gray-900">
-              SERVICIOS ESPECIALIZADOS LABORATORIO
-            </h3>
-            <p class="text-gray-600 text-lg leading-relaxed">
-              Nuestro laboratorio cuenta con equipamiento de última generación y
-              personal altamente capacitado para realizar ensayos siguiendo
-              normas nacionales e internacionales.
-            </p>
-            <div class="space-y-4">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"
-                  >
-                    <span class="text-xl">🔬</span>
-                  </div>
-                </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">
-                    Equipamiento Moderno
-                  </h4>
-                  <p class="text-gray-600">
-                    Maquinaria de ensayos de última generación
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"
-                  >
-                    <span class="text-xl">👨‍🔬</span>
-                  </div>
-                </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">
-                    Personal Especializado
-                  </h4>
-                  <p class="text-gray-600">
-                    Ingenieros con certificación internacional
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0">
-                  <div
-                    class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"
-                  >
-                    <span class="text-xl">📋</span>
-                  </div>
-                </div>
-                <div>
-                  <h4 class="text-lg font-bold text-gray-900">
-                    Normas Nacionales e Internacionales
-                  </h4>
-                  <p class="text-gray-600">Cumplimiento de estándares ISO</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 text-white"
-          >
-            <div class="space-y-6">
-              <div
-                class="bg-white bg-opacity-20 rounded-lg p-6 backdrop-blur-lg"
-              >
-                <h4 class="text-2xl font-bold mb-2">100+</h4>
-                <p>Proyectos completados</p>
-              </div>
-              <div
-                class="bg-white bg-opacity-20 rounded-lg p-6 backdrop-blur-lg"
-              >
-                <h4 class="text-2xl font-bold mb-2">4+</h4>
-                <p>Meses de experiencia</p>
-              </div>
-              <div
-                class="bg-white bg-opacity-20 rounded-lg p-6 backdrop-blur-lg"
-              >
-                <h4 class="text-2xl font-bold mb-2">500+</h4>
-                <p>Ensayos realizados anualmente</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRABAJOS REALIZADOS - SERVICIOS LABORATORIO SECTION -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h3 class="text-4xl font-bold text-gray-900 mb-4">
-            Servicios de Laboratorio - Trabajos Realizados
-          </h3>
-          <div class="w-24 h-1 bg-blue-600 mx-auto rounded"></div>
-          <p class="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
-            Conoce los servicios especializados de laboratorio que hemos
-            ejecutado exitosamente
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Servicio Laboratorio 1 -->
-          <div
-            id="svc-compresion"
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500 cursor-pointer focus:outline-none"
-            role="button"
-            tabindex="0"
-            aria-label="Ver Resistencia a la Compresión del Concreto"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">💪</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Resistencia a la Compresión del Concreto
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Ensayos de rotura de especímenes de concreto para determinar
-                  resistencia a compresión según normas ASTM e ISO.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 50+</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio Laboratorio 2 -->
-          <div
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500 open-mezclas cursor-pointer focus:outline-none"
-            role="button"
-            tabindex="0"
-            aria-label="Ver Diseño de Mezclas (Laboratorio)"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">🔧</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Diseño de Mezclas
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Diseño optimizado de mezclas de concreto para garantizar
-                  resistencia, durabilidad y trabajabilidad en tus proyectos.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 120+</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio Laboratorio 3 -->
-          <div
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">📍</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Densidades de Campo
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Determinación de densidades in situ mediante método del cono
-                  de arena para control de compactación en obras.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 200+</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio Laboratorio 4 -->
-          <div
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">🌍</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Estudio de Mecánica de Suelos
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Análisis completo de propiedades geotécnicas, clasificación de
-                  suelos y estudios de cimentación.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 180+</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio Laboratorio 5 -->
-          <div
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">🧱</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Resistencia a la Compresión de Ladrillos
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Ensayos de resistencia en unidades de albañilería para validar
-                  calidad de materiales en construcción.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 90+</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio Laboratorio 6 -->
-          <div
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">🛣️</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Viga Benkelman
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Evaluación de deflexiones en pavimentos para determinar
-                  capacidad de carga y necesidades de refuerzo.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 75+</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio Laboratorio 7 -->
-          <div
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">📐</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Levantamientos Topográficos
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Levantamientos precisos con equipamiento moderno para
-                  replanteos y estudios de proyectos de infraestructura.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 160+</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio Laboratorio 8 -->
-          <div
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">🗻</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Estudios Geológicos
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Análisis geológico y caracterización de formaciones para
-                  evaluación de riesgos y estabilidad.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 85+</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio Laboratorio 9 -->
-          <div
-            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
-          >
-            <div class="p-8 h-full flex flex-col justify-between">
-              <div>
-                <div
-                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
-                >
-                  <span class="text-3xl">📊</span>
-                </div>
-                <h4 class="text-xl font-bold text-gray-900 mb-2">
-                  Esclerometría
-                </h4>
-                <p class="text-gray-600 leading-relaxed">
-                  Pruebas no destructivas para evaluación de resistencia en
-                  estructuras de concreto ya construidas.
-                </p>
-              </div>
-              <div class="mt-4 pt-4 border-t border-gray-200">
-                <span class="text-sm text-blue-600 font-semibold"
-                  >Trabajos completados: 110+</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div
-          class="mt-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-12 text-white text-center"
-        >
-          <h3 class="text-3xl font-bold mb-4">
-            ¿Necesitas Estos Servicios de Laboratorio?
-          </h3>
-          <p class="text-lg text-blue-100 mb-6 max-w-2xl mx-auto">
-            Contáctanos hoy y déjate asesorar por nuestros expertos para tu
-            próximo proyecto
-          </p>
-          <button
-            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition duration-300 inline-flex items-center space-x-2"
-          >
-            <span>Solicitar Presupuesto</span>
-            <span>→</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- CLIENTES SECTION -->
-    <section id="clientes" class="py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 class="section-title">Nuestros Clientes</h3>
-        <div class="section-divider"></div>
-        <p class="section-subtitle">
-          Empresas y proyectos que han confiado en nuestros servicios
-        </p>
-
-        <!-- Resistencia a la Compresión del Concreto -->
-        <div class="client-group">
-          <div class="client-group-title">
-            <div class="client-group-bar"></div>
-            <h4 class="client-group-name">
-              Resistencia a la Compresión del Concreto
-            </h4>
-          </div>
-          <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
-            <div class="client-item">
-              <span class="client-number">002</span>
-              <p class="client-name">CONSTRUCTORA E INVERSIONES S.A.C</p>
-            </div>
-            <div class="client-item">
-              <span class="client-number">003</span>
-              <p class="client-name">CONSORCIO SUPERVISOR TARTAR</p>
-            </div>
-            <div class="client-item">
-              <span class="client-number">004</span>
-              <p class="client-name">S&G SERVICIOS GENERALES E.I.R.L</p>
-            </div>
-            <div class="client-item">
-              <span class="client-number">005</span>
-              <p class="client-name">CONSORCIO CANCHA CORRAL</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Densidades de Campo -->
-        <div class="client-group">
-          <div class="client-group-title">
-            <div class="client-group-bar"></div>
-            <h4 class="client-group-name">Densidades de Campo</h4>
-          </div>
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="client-item">
-              <span class="client-number">001</span>
-              <p class="client-name">GALENA CONTRATISTAS GENERALES S.R.L</p>
-            </div>
-            <div class="client-item">
-              <span class="client-number">002</span>
-              <p class="client-name">CONSORCIO CUMBEMAYO</p>
-            </div>
-            <div class="client-item">
-              <span class="client-number">003</span>
-              <p class="client-name">CONSORCIO SUPERVISOR TARTAR</p>
-            </div>
-            <div class="client-item">
-              <span class="client-number">004</span>
-              <p class="client-name">CONSORCIO SAN MARTIN</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPEDIENTES SECTION -->
-    <section id="expedientes" class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h3 class="text-4xl font-bold text-gray-900 mb-4">
-            Expedientes Técnicos Integrales
-          </h3>
-          <div class="w-24 h-1 bg-blue-600 mx-auto rounded"></div>
-          <p class="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
-            Documentación completa y profesional para tus proyectos de
-            construcción
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div
-            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border-l-4 border-blue-600"
-          >
-            <div class="text-3xl mb-3">🏗️</div>
-            <h4 class="font-bold text-gray-900 mb-2">Diseño Base</h4>
-            <p class="text-gray-600 text-sm">
-              Planos y especificaciones técnicas
-            </p>
-          </div>
-          <div
-            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border-l-4 border-blue-600"
-          >
-            <div class="text-3xl mb-3">📐</div>
-            <h4 class="font-bold text-gray-900 mb-2">Análisis Estructural</h4>
-            <p class="text-gray-600 text-sm">
-              Cálculos de ingeniería avanzados
-            </p>
-          </div>
-          <div
-            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border-l-4 border-blue-600"
-          >
-            <div class="text-3xl mb-3">🌍</div>
-            <h4 class="font-bold text-gray-900 mb-2">Geotecnia</h4>
-            <p class="text-gray-600 text-sm">Estudio de cimentación y suelos</p>
-          </div>
-          <div
-            class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 border-l-4 border-blue-600"
-          >
-            <div class="text-3xl mb-3">✅</div>
-            <h4 class="font-bold text-gray-900 mb-2">Supervisión</h4>
-            <p class="text-gray-600 text-sm">Control y vigilancia de obra</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ESTADÍSTICAS SECTION -->
-    <section class="stats-section">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div class="stat-card">
-            <span class="stat-number">50+</span>
-            <p class="stat-label">Clientes Satisfechos</p>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">50+</span>
-            <p class="stat-label">Proyectos Entregados</p>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">4+</span>
-            <p class="stat-label">Meses de Trayectoria</p>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">24/7</span>
-            <p class="stat-label">Soporte Técnico</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA SECTION -->
-    <section id="cta" class="py-24 bg-white border-t-8 border-blue-600">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h3 class="text-4xl font-bold text-gray-900 mb-4">
-          ¿Tienes un Proyecto en Mente?
-        </h3>
-        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Contáctanos para recibir una asesoría gratuita y una cotización
-          personalizada para tu proyecto de ingeniería
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition duration-300 text-lg"
-          >
-            Solicitar Asesoría
-          </button>
-          <button
-            class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition duration-300 text-lg"
-          >
-            Descargar Portafolio
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO SECTION -->
-    <section id="contacto" class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 class="text-4xl font-bold text-gray-900 text-center mb-16">
-          Contacto
-        </h3>
-
-        <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-white rounded-lg shadow-md p-6 text-center">
-            <div class="text-4xl mb-4">📍</div>
-            <h4 class="font-bold text-gray-900 mb-2">Ubicación</h4>
-            <p class="text-gray-600">
-              Ubr. La Alameda, Cajamarca 06001, Perú
-              <br />
-            </p>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-6 text-center">
-            <div class="text-4xl mb-4">📞</div>
-            <h4 class="font-bold text-gray-900 mb-2">Teléfono</h4>
-            <p class="text-gray-600">
-              +51 983 157 792<br />
-              WhatsApp: +51 983 157 792
-            </p>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-6 text-center">
-            <div class="text-4xl mb-4">✉️</div>
-            <h4 class="font-bold text-gray-900 mb-2">Email</h4>
-            <p class="text-gray-600">
-              info@suelotech.com<br />
-              contacto@suelotech.com
-            </p>
-          </div>
-        </div>
-
-        
-      </div>
-    </section>
-
-    <!-- MISIÓN Y VISIÓN SECTION -->
+    
+<!-- MISIÓN Y VISIÓN SECTION -->
     <section
       id="mision-vision"
       class="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-900"
@@ -1123,6 +441,1025 @@
         </div>
       </div>
     </section>
+     <!-- NUEVA SECCIÓN: NOSOTROS -->
+    <section id="nosotros" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="nosotros-card relative overflow-hidden">
+          <!-- Elementos decorativos -->
+          <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
+          <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+          
+          <div class="relative z-10">
+            <div class="text-center mb-12">
+              <span class="section-badge">¿Quiénes Somos?</span>
+              <h3 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                SUELO TECH CONTROL
+              </h3>
+              <div class="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+              <div class="space-y-6">
+                <p class="text-gray-300 text-lg leading-relaxed">
+                  Somos <span class="text-cyan-400 font-bold">Suelo Tech Control Ingeniería y Construcción</span>, una empresa dedicada a brindar servicios especializados en ingeniería civil, estudios de mecánica de suelos, tecnología del concreto, levantamientos topográficos y supervisión de obras.
+                </p>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                  Nuestra misión es ofrecer soluciones técnicas confiables que garanticen la calidad y seguridad de cada proyecto. Nos guiamos por valores como responsabilidad, transparencia, puntualidad e innovación, buscando siempre la satisfacción de nuestros clientes.
+                </p>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                  Aunque somos una empresa joven, contamos con un equipo comprometido y capacitado para responder a las necesidades de proyectos civiles y prediales, aportando resultados precisos y confiables.
+                </p>
+                
+                <!-- Estadísticas rápidas -->
+                <div class="grid grid-cols-3 gap-4 pt-6">
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-cyan-400">50+</div>
+                    <div class="text-sm text-gray-400">Proyectos</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-cyan-400">100%</div>
+                    <div class="text-sm text-gray-400">Calidad</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-cyan-400">24/7</div>
+                    <div class="text-sm text-gray-400">Soporte</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center border border-white/20">
+                  <div class="text-4xl mb-2">🏗️</div>
+                  <div class="text-white font-bold">Ingeniería Civil</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center border border-white/20">
+                  <div class="text-4xl mb-2">🔬</div>
+                  <div class="text-white font-bold">Laboratorio</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center border border-white/20">
+                  <div class="text-4xl mb-2">📐</div>
+                  <div class="text-white font-bold">Topografía</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center border border-white/20">
+                  <div class="text-4xl mb-2">✅</div>
+                  <div class="text-white font-bold">Supervisión</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: NUESTROS VALORES -->
+    <section id="valores" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="section-badge">Nuestra Filosofía</span>
+          <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Nuestros Valores
+          </h3>
+          <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto rounded"></div>
+          <p class="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
+            Principios que guían cada proyecto y nos definen como empresa
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Valor 1: Calidad -->
+          <div class="valor-card group">
+            <div class="valor-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="valor-titulo">Calidad</h4>
+            <p class="text-gray-600 text-sm">Excelencia en cada servicio</p>
+          </div>
+
+          <!-- Valor 2: Precisión -->
+          <div class="valor-card group">
+            <div class="valor-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h4 class="valor-titulo">Precisión</h4>
+            <p class="text-gray-600 text-sm">Resultados exactos y confiables</p>
+          </div>
+
+          <!-- Valor 3: Seguridad -->
+          <div class="valor-card group">
+            <div class="valor-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h4 class="valor-titulo">Seguridad</h4>
+            <p class="text-gray-600 text-sm">Prioridad en cada proyecto</p>
+          </div>
+
+          <!-- Valor 4: Innovación -->
+          <div class="valor-card group">
+            <div class="valor-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h4 class="valor-titulo">Innovación</h4>
+            <p class="text-gray-600 text-sm">Tecnología y mejora continua</p>
+          </div>
+
+          <!-- Valor 5: Responsabilidad -->
+          <div class="valor-card group">
+            <div class="valor-icon">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h4 class="valor-titulo">Responsabilidad</h4>
+            <p class="text-gray-600 text-sm">Compromiso con nuestros clientes</p>
+          </div>
+
+          <!-- Valor 6: Transparencia -->
+          <div class="valor-card group">
+            <div class="valor-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h4 class="valor-titulo">Transparencia</h4>
+            <p class="text-gray-600 text-sm">Comunicación clara y honesta</p>
+          </div>
+
+          <!-- Valor 7: Confidencialidad -->
+          <div class="valor-card group">
+            <div class="valor-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h4 class="valor-titulo">Confidencialidad</h4>
+            <p class="text-gray-600 text-sm">Protección de información</p>
+          </div>
+
+          <!-- Valor 8: Puntualidad -->
+          <div class="valor-card group">
+            <div class="valor-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h4 class="valor-titulo">Puntualidad</h4>
+            <p class="text-gray-600 text-sm">Entregas en tiempo y forma</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: BENEFICIOS -->
+    <section id="beneficios" class="py-20 bg-gradient-to-r from-cyan-600 to-blue-700 relative overflow-hidden">
+      <!-- Elementos decorativos -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <span class="section-badge bg-white text-cyan-600">¿Por qué elegirnos?</span>
+          <h3 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Beneficios
+          </h3>
+          <div class="w-24 h-1 bg-white mx-auto rounded"></div>
+          <p class="text-cyan-100 mt-4 text-lg max-w-2xl mx-auto">
+            En Suelo Tech Control Ingeniería y Construcción ofrecemos más que servicios: brindamos confianza y resultados que marcan la diferencia.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <!-- Beneficio 1 -->
+          <div class="beneficio-item">
+            <div class="beneficio-check">
+              <i class="fas fa-check"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Resultados precisos y confiables</h4>
+              <p class="text-gray-600">Garantía en cada medición y análisis</p>
+            </div>
+          </div>
+
+          <!-- Beneficio 2 -->
+          <div class="beneficio-item">
+            <div class="beneficio-check">
+              <i class="fas fa-check"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Entrega puntual</h4>
+              <p class="text-gray-600">Cumplimos con los plazos acordados</p>
+            </div>
+          </div>
+
+          <!-- Beneficio 3 -->
+          <div class="beneficio-item">
+            <div class="beneficio-check">
+              <i class="fas fa-check"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Validez técnica reconocida</h4>
+              <p class="text-gray-600">Certificaciones y normas internacionales</p>
+            </div>
+          </div>
+
+          <!-- Beneficio 4 -->
+          <div class="beneficio-item">
+            <div class="beneficio-check">
+              <i class="fas fa-check"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Atención personalizada</h4>
+              <p class="text-gray-600">Asesoría dedicada para cada cliente</p>
+            </div>
+          </div>
+
+          <!-- Beneficio 5 -->
+          <div class="beneficio-item md:col-span-2">
+            <div class="beneficio-check">
+              <i class="fas fa-check"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-900 text-lg">Compromiso con la calidad y seguridad</h4>
+              <p class="text-gray-600">Estándares más altos en cada proyecto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICIOS SECTION (mejorado) -->
+    
+
+    <!-- SECCIÓN DE SERVICIOS CON CARRUSEL -->
+<section id="servicios-principales" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="section-badge">Nuestros Servicios</span>
+      <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Servicios Especializados</h3>
+      <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto rounded"></div>
+      <p class="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
+        Conoce todos nuestros servicios especializados en ingeniería civil y geotecnia
+      </p>
+    </div>
+
+    <!-- Grid de Servicios con imágenes -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Servicio 1: Laboratorio de Mecánica de Suelos -->
+      <div class="service-image-card" onclick="openServiceModal('suelos')">
+        <div class="service-image-container">
+          <img src="https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Laboratorio de Mecánica de Suelos">
+          <div class="service-image-overlay">
+            <span class="text-white font-semibold">Ver más</span>
+          </div>
+        </div>
+        <div class="service-image-content">
+          <h4 class="service-image-title">LABORATORIO DE MECÁNICA DE SUELOS</h4>
+          <p class="service-image-description">Análisis completos de propiedades geotécnicas, clasificación de suelos y ensayos especializados.</p>
+          <div class="service-image-tags">
+            <span class="service-image-tag">Granulometría</span>
+            <span class="service-image-tag">Límites</span>
+            <span class="service-image-tag">Compactación</span>
+          </div>
+        </div>
+        <div class="service-image-footer">
+          <span class="service-image-link">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text-sm text-gray-500">🔬 15+ ensayos</span>
+        </div>
+      </div>
+
+      <!-- Servicio 2: Laboratorio de Tecnología del Concreto -->
+      <div class="service-image-card" onclick="openServiceModal('concreto')">
+        <div class="service-image-container">
+          <img src="https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Laboratorio de Tecnología del Concreto">
+          <div class="service-image-overlay">
+            <span class="text-white font-semibold">Ver más</span>
+          </div>
+        </div>
+        <div class="service-image-content">
+          <h4 class="service-image-title">LABORATORIO DE TECNOLOGÍA DEL CONCRETO</h4>
+          <p class="service-image-description">Ensayos de resistencia, diseño de mezclas y control de calidad del concreto.</p>
+          <div class="service-image-tags">
+            <span class="service-image-tag">Compresión</span>
+            <span class="service-image-tag">Diseño</span>
+            <span class="service-image-tag">Agregados</span>
+          </div>
+        </div>
+        <div class="service-image-footer">
+          <span class="service-image-link">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text-sm text-gray-500">🧪 20+ ensayos</span>
+        </div>
+      </div>
+
+      <!-- Servicio 3: Supervisión de Obras -->
+      <div class="service-image-card" onclick="openServiceModal('supervision')">
+        <div class="service-image-container">
+          <img src="https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Supervisión de Obras">
+          <div class="service-image-overlay">
+            <span class="text-white font-semibold">Ver más</span>
+          </div>
+        </div>
+        <div class="service-image-content">
+          <h4 class="service-image-title">SUPERVISIÓN DE OBRAS</h4>
+          <p class="service-image-description">Control de calidad, verificación de planos y especificaciones técnicas en obra.</p>
+          <div class="service-image-tags">
+            <span class="service-image-tag">Calidad</span>
+            <span class="service-image-tag">Inspección</span>
+            <span class="service-image-tag">Informes</span>
+          </div>
+        </div>
+        <div class="service-image-footer">
+          <span class="service-image-link">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text-sm text-gray-500">👷 50+ obras</span>
+        </div>
+      </div>
+
+      <!-- Servicio 4: Levantamientos Topográficos -->
+      <div class="service-image-card" onclick="openServiceModal('topografia')">
+        <div class="service-image-container">
+          <img src="https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Levantamientos Topográficos">
+          <div class="service-image-overlay">
+            <span class="text-white font-semibold">Ver más</span>
+          </div>
+        </div>
+        <div class="service-image-content">
+          <h4 class="service-image-title">LEVANTAMIENTOS TOPOGRÁFICOS</h4>
+          <p class="service-image-description">Levantamientos precisos con estación total y GPS diferencial.</p>
+          <div class="service-image-tags">
+            <span class="service-image-tag">Estación total</span>
+            <span class="service-image-tag">GPS</span>
+            <span class="service-image-tag">3D</span>
+          </div>
+        </div>
+        <div class="service-image-footer">
+          <span class="service-image-link">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text-sm text-gray-500">📐 100+ levantamientos</span>
+        </div>
+      </div>
+
+      <!-- Servicio 5: Regularización Catastral -->
+      <div class="service-image-card" onclick="openServiceModal('catastro')">
+        <div class="service-image-container">
+          <img src="https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Regularización Catastral">
+          <div class="service-image-overlay">
+            <span class="text-white font-semibold">Ver más</span>
+          </div>
+        </div>
+        <div class="service-image-content">
+          <h4 class="service-image-title">REGULARIZACIÓN CATASTRAL</h4>
+          <p class="service-image-description">Saneamiento físico legal, declaratoria de fábrica y prescripción.</p>
+          <div class="service-image-tags">
+            <span class="service-image-tag">Saneamiento</span>
+            <span class="service-image-tag">Declaratoria</span>
+            <span class="service-image-tag">Prescripción</span>
+          </div>
+        </div>
+        <div class="service-image-footer">
+          <span class="service-image-link">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text-sm text-gray-500">🏠 200+ predios</span>
+        </div>
+      </div>
+
+      <!-- Servicio 6: Expedientes Técnicos -->
+      <div class="service-image-card" onclick="openServiceModal('expedientes')">
+        <div class="service-image-container">
+          <img src="https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Expedientes Técnicos">
+          <div class="service-image-overlay">
+            <span class="text-white font-semibold">Ver más</span>
+          </div>
+        </div>
+        <div class="service-image-content">
+          <h4 class="service-image-title">EXPEDIENTES TÉCNICOS</h4>
+          <p class="service-image-description">Documentación completa: memorias, planos, metrados y presupuestos.</p>
+          <div class="service-image-tags">
+            <span class="service-image-tag">Planos</span>
+            <span class="service-image-tag">Metrados</span>
+            <span class="service-image-tag">Presupuestos</span>
+          </div>
+        </div>
+        <div class="service-image-footer">
+          <span class="service-image-link">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text-sm text-gray-500">📋 80+ expedientes</span>
+        </div>
+      </div>
+
+      <!-- Servicio 7: Alquiler de Equipos -->
+      <div class="service-image-card" onclick="openServiceModal('alquiler')">
+        <div class="service-image-container">
+          <img src="https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Alquiler de Equipos">
+          <div class="service-image-overlay">
+            <span class="text-white font-semibold">Ver más</span>
+          </div>
+        </div>
+        <div class="service-image-content">
+          <h4 class="service-image-title">ALQUILER DE EQUIPOS</h4>
+          <p class="service-image-description">Equipos topográficos, moldes metálicos y laboratorio.</p>
+          <div class="service-image-tags">
+            <span class="service-image-tag">Topografía</span>
+            <span class="service-image-tag">Moldes</span>
+            <span class="service-image-tag">Laboratorio</span>
+          </div>
+        </div>
+        <div class="service-image-footer">
+          <span class="service-image-link">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text-sm text-gray-500">⚙️ 30+ equipos</span>
+        </div>
+      </div>
+
+      <!-- Servicio 8: Otros Servicios -->
+      <div class="service-image-card" onclick="openServiceModal('otros')">
+        <div class="service-image-container">
+          <img src="https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Otros Servicios">
+          <div class="service-image-overlay">
+            <span class="text-white font-semibold">Ver más</span>
+          </div>
+        </div>
+        <div class="service-image-content">
+          <h4 class="service-image-title">OTROS SERVICIOS</h4>
+          <p class="service-image-description">Asesoría técnica, capacitaciones y consultoría especializada.</p>
+          <div class="service-image-tags">
+            <span class="service-image-tag">Asesoría</span>
+            <span class="service-image-tag">Capacitación</span>
+            <span class="service-image-tag">Consultoría</span>
+          </div>
+        </div>
+        <div class="service-image-footer">
+          <span class="service-image-link">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="text-sm text-gray-500">📚 10+ servicios</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mensaje adicional -->
+    <div class="text-center mt-12">
+      <p class="text-gray-600">
+        Todos nuestros servicios cumplen con las normas técnicas vigentes 
+        <span class="font-bold text-cyan-600">RNE, NTP, ASTM, AASHTO</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL / CARRUSEL PARA SERVICIOS -->
+<div id="serviceModal" class="service-modal">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h2 id="modalServiceTitle" class="text-3xl font-bold text-gray-900">Laboratorio de Mecánica de Suelos</h2>
+      <div class="modal-close" onclick="closeServiceModal()">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <div class="modal-body">
+      <!-- Carrusel de imágenes -->
+      <div class="carousel-container" id="serviceCarousel">
+        <div class="carousel-slides" id="carouselSlides">
+          <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+        </div>
+        
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" onclick="changeSlide(1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+
+      <!-- Contenido detallado del servicio -->
+      <div class="mt-8">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <i class="fas fa-info-circle text-cyan-600"></i>
+              Descripción del Servicio
+            </h3>
+            <p id="modalServiceDescription" class="text-gray-600 leading-relaxed">
+              Descripción detallada del servicio...
+            </p>
+
+            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-4 flex items-center gap-2">
+              <i class="fas fa-clipboard-check text-cyan-600"></i>
+              Normas Aplicables
+            </h3>
+            <div id="modalServiceNormas" class="flex flex-wrap gap-2">
+              <!-- Normas se cargarán dinámicamente -->
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <i class="fas fa-tasks text-cyan-600"></i>
+              Servicios Incluidos
+            </h3>
+            <ul id="modalServiceList" class="space-y-3">
+              <!-- Lista de servicios se cargará dinámicamente -->
+            </ul>
+
+            <div class="mt-8 bg-gradient-to-r from-cyan-50 to-blue-50 p-6 rounded-xl">
+              <h4 class="font-bold text-gray-900 mb-2">¿Necesitas este servicio?</h4>
+              <p class="text-gray-600 mb-4">Contáctanos para una cotización personalizada</p>
+              <div class="flex gap-4">
+                <a href="https://wa.me/51983157792" target="_blank" class="flex-1 bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-700 transition flex items-center justify-center gap-2">
+                  <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <button onclick="closeServiceModal()" class="flex-1 bg-cyan-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-cyan-700 transition">
+                  Solicitar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- TRABAJOS REALIZADOS - SERVICIOS LABORATORIO SECTION -->
+    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h3 class="text-4xl font-bold text-gray-900 mb-4">
+            Servicios de Laboratorio - Trabajos Realizados
+          </h3>
+          <div class="w-24 h-1 bg-blue-600 mx-auto rounded"></div>
+          <p class="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
+            Conoce los servicios especializados de laboratorio que hemos
+            ejecutado exitosamente
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Servicio Laboratorio 1 -->
+          <div
+            id="svc-compresion"
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500 cursor-pointer focus:outline-none"
+            role="button"
+            tabindex="0"
+            aria-label="Ver Resistencia a la Compresión del Concreto"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">💪</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Resistencia a la Compresión del Concreto
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Ensayos de rotura de especímenes de concreto para determinar
+                  resistencia a compresión según normas ASTM e ISO. Trabajamos
+                  bajo normas técnicas vigentes (RNE, NTP, ASTM, AASHTO),
+                  brindando soporte técnico desde la etapa de estudio hasta la
+                  ejecución de obra, con compromiso, precisión y responsabilidad
+                  profesional. Incluye muestreo, curado controlado y emisión de
+                  certificados de ensayo.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 50+</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Laboratorio 2 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500 open-mezclas cursor-pointer focus:outline-none"
+            role="button"
+            tabindex="0"
+            aria-label="Ver Diseño de Mezclas (Laboratorio)"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">🔧</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Diseño de Mezclas
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Diseño optimizado de mezclas de concreto para garantizar
+                  resistencia, durabilidad y trabajabilidad en tus proyectos.
+                  Trabajamos bajo normas técnicas vigentes (RNE, NTP, ASTM,
+                  AASHTO), brindando soporte técnico desde la etapa de estudio
+                  hasta la ejecución de obra, con compromiso, precisión y
+                  responsabilidad profesional. Realizamos caracterización de
+                  agregados, ensayos de consistencia y control de
+                  dosificaciones.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 120+</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Laboratorio 3 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">📍</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Densidades de Campo
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Determinación de densidades in situ mediante método del cono
+                  de arena para control de compactación en obras. Trabajamos
+                  bajo normas técnicas vigentes (RNE, NTP, ASTM, AASHTO),
+                  brindando soporte técnico desde la etapa de estudio hasta la
+                  ejecución de obra, con compromiso, precisión y responsabilidad
+                  profesional. Incluye ensayos con equipo nuclear y elaboración
+                  de informes con mapas de compactación.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 200+</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Laboratorio 4 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">🌍</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Estudio de Mecánica de Suelos
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Análisis completo de propiedades geotécnicas, clasificación de
+                  suelos y estudios de cimentación. Trabajamos bajo normas
+                  técnicas vigentes (RNE, NTP, ASTM, AASHTO), brindando soporte
+                  técnico desde la etapa de estudio hasta la ejecución de obra,
+                  con compromiso, precisión y responsabilidad profesional.
+                  Incluye muestreo, ensayos de laboratorio (granulometría,
+                  límites de Atterberg, compactación) y recomendaciones de
+                  cimentación.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 180+</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Laboratorio 5 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">🧱</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Resistencia a la Compresión de Ladrillos
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Ensayos de resistencia en unidades de albañilería para validar
+                  calidad de materiales en construcción. Trabajamos bajo normas
+                  técnicas vigentes (RNE, NTP, ASTM, AASHTO), brindando soporte
+                  técnico desde la etapa de estudio hasta la ejecución de obra,
+                  con compromiso, precisión y responsabilidad profesional. Los
+                  ensayos se realizan bajo condiciones controladas y con emisión
+                  de certificados.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 90+</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Laboratorio 6 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">🛣️</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Viga Benkelman
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Evaluación de deflexiones en pavimentos para determinar
+                  capacidad de carga y necesidades de refuerzo. Trabajamos bajo
+                  normas técnicas vigentes (RNE, NTP, ASTM, AASHTO), brindando
+                  soporte técnico desde la etapa de estudio hasta la ejecución
+                  de obra, con compromiso, precisión y responsabilidad
+                  profesional. Incluye mediciones en campo y análisis de
+                  rendimiento del pavimento.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 75+</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Laboratorio 7 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">📐</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Levantamientos Topográficos
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Levantamientos precisos con equipamiento moderno para
+                  replanteos y estudios de proyectos de infraestructura.
+                  Trabajamos bajo normas técnicas vigentes (RNE, NTP, ASTM,
+                  AASHTO), brindando soporte técnico desde la etapa de estudio
+                  hasta la ejecución de obra, con compromiso, precisión y
+                  responsabilidad profesional. Entregamos planos, curvas de
+                  nivel y modelos digitales (DTM/DSM) compatibles con CAD/GIS.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 160+</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Laboratorio 8 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">🗻</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Estudios Geológicos
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Análisis geológico y caracterización de formaciones para
+                  evaluación de riesgos y estabilidad. Trabajamos bajo normas
+                  técnicas vigentes (RNE, NTP, ASTM, AASHTO), brindando soporte
+                  técnico desde la etapa de estudio hasta la ejecución de obra,
+                  con compromiso, precisión y responsabilidad profesional. Se
+                  incluyen levantamientos de campo, muestreos y reporte de
+                  riesgos geológicos.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 85+</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio Laboratorio 9 -->
+          <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-t-4 border-blue-600 hover:border-cyan-500"
+          >
+            <div class="p-8 h-full flex flex-col justify-between">
+              <div>
+                <div
+                  class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <span class="text-3xl">📊</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Esclerometría
+                </h4>
+                <p class="text-gray-600 leading-relaxed">
+                  Pruebas no destructivas para evaluación de resistencia en
+                  estructuras de concreto ya construidas. Trabajamos bajo normas
+                  técnicas vigentes (RNE, NTP, ASTM, AASHTO), brindando soporte
+                  técnico desde la etapa de estudio hasta la ejecución de obra,
+                  con compromiso, precisión y responsabilidad profesional.
+                  Utilizamos esclerómetros calibrados y aplicamos correlaciones
+                  para estimar la resistencia in situ.
+                </p>
+              </div>
+              <div class="mt-4 pt-4 border-t border-gray-200">
+                <span class="text-sm text-blue-600 font-semibold"
+                  >Trabajos completados: 110+</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div
+          class="mt-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-12 text-white text-center"
+        >
+          <h3 class="text-3xl font-bold mb-4">
+            ¿Necesitas Estos Servicios de Laboratorio?
+          </h3>
+          <p class="text-lg text-blue-100 mb-6 max-w-2xl mx-auto">
+            Contáctanos hoy y déjate asesorar por nuestros expertos para tu
+            próximo proyecto
+          </p>
+          <button
+            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition duration-300 inline-flex items-center space-x-2"
+          >
+            <span>Solicitar Presupuesto</span>
+            <span>→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTADÍSTICAS SECTION -->
+    <section class="stats-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="stat-card">
+            <span class="stat-number">50+</span>
+            <p class="stat-label">Clientes Satisfechos</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">50+</span>
+            <p class="stat-label">Proyectos Entregados</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4+</span>
+            <p class="stat-label">Meses de Trayectoria</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">24/7</span>
+            <p class="stat-label">Soporte Técnico</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section id="cta" class="py-24 bg-white border-t-8 border-blue-600">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h3 class="text-4xl font-bold text-gray-900 mb-4">
+          ¿Tienes un Proyecto en Mente?
+        </h3>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          Contáctanos para recibir una asesoría gratuita y una cotización
+          personalizada para tu proyecto de ingeniería
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition duration-300 text-lg"
+          >
+            Solicitar Asesoría
+          </button>
+          <button
+            class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition duration-300 text-lg"
+          >
+            Descargar Portafolio
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO SECTION -->
+  
+<section id="contacto" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Título de la sección con estilo mejorado -->
+        <div class="text-center mb-16">
+            <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Contacto
+            </h3>
+            <div class="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+            <p class="text-gray-600 mt-4 text-lg">¡Estamos aquí para ayudarte! Elige el medio de tu preferencia.</p>
+        </div>
+
+        <!-- Grid de información de contacto (primera fila: ubicación, teléfono, email) -->
+        <div class="grid md:grid-cols-3 gap-8 mb-10">
+            <!-- Tarjeta de Ubicación -->
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-100">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-600 transition-colors duration-300">
+                    <i class="fas fa-map-marker-alt text-3xl text-blue-600 group-hover:text-white transition-colors duration-300"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-xl mb-3">Ubicación</h4>
+                <p class="text-gray-600 leading-relaxed">
+                    Ubr. La Alameda,<br>Cajamarca 06001, Perú
+                </p>
+            </div>
+
+            <!-- Tarjeta de Teléfono -->
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-100">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-600 transition-colors duration-300">
+                    <i class="fas fa-phone-alt text-3xl text-blue-600 group-hover:text-white transition-colors duration-300"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-xl mb-3">Teléfono</h4>
+                <p class="text-gray-600 leading-relaxed">
+                    <a href="tel:+51983157792" class="hover:text-blue-600 transition-colors">+51 983 157 792</a>
+                </p>
+            </div>
+
+            <!-- Tarjeta de Email -->
+            <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-100">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-600 transition-colors duration-300">
+                    <i class="fas fa-envelope text-3xl text-blue-600 group-hover:text-white transition-colors duration-300"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-xl mb-3">Email</h4>
+                <p class="text-gray-600 leading-relaxed">
+                    <a href="mailto:suelotechcontrol@gmail.com" class="hover:text-blue-600 transition-colors">suelotechcontrol@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Grid de Redes Sociales (segunda fila: Facebook, WhatsApp, TikTok) -->
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Tarjeta de Facebook con enlace corregido -->
+            <a href="https://www.facebook.com/share/1E3kvKDzwy/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-100 hover:-translate-y-1">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-600 transition-colors duration-300">
+                    <i class="fab fa-facebook-f text-3xl text-blue-600 group-hover:text-white transition-colors duration-300"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-xl mb-3">Facebook</h4>
+                <p class="text-gray-600 leading-relaxed group-hover:text-blue-600 transition-colors">
+                    SUELO TECH CONTROL
+                </p>
+            </a>
+
+            <!-- Tarjeta de WhatsApp con enlace corregido -->
+            <a href="https://wa.me/51983157792" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-100 hover:-translate-y-1">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-green-500 transition-colors duration-300">
+                    <i class="fab fa-whatsapp text-3xl text-green-600 group-hover:text-white transition-colors duration-300"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-xl mb-3">WhatsApp</h4>
+                <p class="text-gray-600 leading-relaxed group-hover:text-green-500 transition-colors">
+                    +51 983 157 792
+                </p>
+            </a>
+
+            <!-- Tarjeta de TikTok con enlace corregido -->
+            <a href="https://www.tiktok.com/@suelo.tech.control?_r=1&_t=ZS-94bpMH00Dvb" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center border border-gray-100 hover:-translate-y-1">
+                <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-gray-900 transition-colors duration-300">
+                    <i class="fab fa-tiktok text-3xl text-black group-hover:text-white transition-colors duration-300"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-xl mb-3">TikTok</h4>
+                <p class="text-gray-600 leading-relaxed group-hover:text-gray-900 transition-colors">
+                    @suelo.tech.control
+                </p>
+            </a>
+        </div>
+
+        <!-- Mensaje adicional opcional -->
+        <div class="text-center mt-16">
+            <p class="text-gray-500 text-sm">✨ Respondemos en un máximo de 24 horas ✨</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+    
 
     <!-- FOOTER -->
     <footer>
@@ -1148,7 +1485,6 @@
             <h4>Empresa</h4>
             <ul>
               <li><a href="#laboratorio">Acerca de</a></li>
-              <li><a href="#clientes">Nuestros Clientes</a></li>
               <li><a href="#servicios">Servicios Especiales</a></li>
               <li><a href="#contacto">Ubicación</a></li>
             </ul>
@@ -1244,5 +1580,6 @@
         }
       });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

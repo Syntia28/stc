@@ -628,13 +628,6 @@ body {
     opacity: 0.9;
 }
 
-/* ===== CLIENTES SECTION ===== */
-#clientes {
-    background: var(--white);
-    padding: 5rem 0;
-    position: relative;
-}
-
 .client-group {
     margin-bottom: 3rem;
 }
@@ -1418,4 +1411,615 @@ button {
     #servicios .section-title {
         font-size: 2rem;
     }
+}
+/* ===== SECCIÃ“N NOSOTROS ===== */
+.nosotros-card {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.nosotros-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, transparent 70%);
+    animation: nosotrosPulse 4s ease-in-out infinite;
+}
+
+.nosotros-card::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+    animation: nosotrosPulse 4s ease-in-out infinite reverse;
+}
+
+@keyframes nosotrosPulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    color: white;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(6, 182, 212, 0.3);
+    transition: all 0.3s ease;
+}
+
+.section-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.4);
+}
+
+.section-badge.bg-white {
+    background: white;
+    color: #0891b2;
+}
+
+/* ===== SECCIÃ“N VALORES ===== */
+.valor-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(6, 182, 212, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.valor-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #06b6d4, #0891b2, #0284c7);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.valor-card:hover::before {
+    transform: translateX(0);
+}
+
+.valor-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #06b6d4;
+    box-shadow: 0 25px 30px -12px rgba(6, 182, 212, 0.3);
+}
+
+.valor-icon {
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 2.5rem;
+    transform: rotate(0deg) scale(1);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.3);
+}
+
+.valor-card:hover .valor-icon {
+    transform: rotate(360deg) scale(1.1);
+    background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+}
+
+.valor-titulo {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.valor-titulo::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #06b6d4, #0891b2);
+    transition: width 0.3s ease;
+}
+
+.valor-card:hover .valor-titulo::after {
+    width: 50%;
+}
+
+/* ===== SECCIÃ“N BENEFICIOS ===== */
+#beneficios {
+    position: relative;
+    background: linear-gradient(135deg, #0891b2 0%, #1e40af 100%);
+}
+
+#beneficios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><path d="M30 0 L60 30 L30 60 L0 30 Z" fill="rgba(255,255,255,0.02)"/></svg>');
+    opacity: 0.1;
+    animation: backgroundMove 20s linear infinite;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 60px;
+    }
+}
+
+.beneficio-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.beneficio-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #06b6d4, #0891b2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.beneficio-item:hover {
+    transform: translateX(10px) scale(1.02);
+    border-color: #06b6d4;
+    box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 1);
+}
+
+.beneficio-item:hover::before {
+    opacity: 1;
+}
+
+.beneficio-check {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+    transition: all 0.3s ease;
+}
+
+.beneficio-item:hover .beneficio-check {
+    transform: rotate(360deg) scale(1.1);
+    box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.4);
+}
+
+/* Elementos decorativos animados */
+.absolute.rounded-full {
+    transition: all 0.5s ease;
+}
+
+#beneficios:hover .absolute.rounded-full {
+    transform: scale(1.2);
+    opacity: 0.2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nosotros-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .valor-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .valor-icon {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .beneficio-item {
+        padding: 1.2rem;
+    }
+
+    .beneficio-check {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid-cols-2 {
+        gap: 1rem;
+    }
+
+    .valor-titulo {
+        font-size: 1.1rem;
+    }
+}/* Estilos para la sección de servicios */
+.section-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para las tarjetas de servicios con imágenes */
+.service-image-card {
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-image-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px -15px rgba(6, 182, 212, 0.3);
+}
+
+.service-image-container {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.service-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-image-card:hover .service-image-container img {
+  transform: scale(1.1);
+}
+
+.service-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.service-image-card:hover .service-image-overlay {
+  opacity: 1;
+}
+
+.service-image-content {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.service-image-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.service-image-description {
+  color: #475569;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.service-image-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-image-tag {
+  background: #e0f2fe;
+  color: #0891b2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.service-image-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-image-link {
+  color: #0891b2;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.service-image-link i {
+  transition: transform 0.3s ease;
+}
+
+.service-image-link:hover i {
+  transform: translateX(5px);
+}
+
+/* Estilos para el modal/carrusel */
+.service-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.service-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  background: white;
+  border-radius: 2rem;
+  max-width: 1200px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalAppear 0.3s ease;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  padding: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: #0891b2;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+/* Estilos del carrusel */
+.carousel-container {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #0f172a;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: #0891b2;
+  color: white;
+}
+
+.carousel-btn.prev {
+  left: 1rem;
+}
+
+.carousel-btn.next {
+  right: 1rem;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.carousel-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: #0891b2;
+  transform: scale(1.3);
+}
+
+/* Service tag para el modal */
+.service-tag {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  background: #e0f2fe;
+  color: #0891b2;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .modal-container {
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .carousel-slide {
+    height: 250px;
+  }
+  
+  .modal-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
