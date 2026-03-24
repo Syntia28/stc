@@ -28,9 +28,9 @@ const serviceData = {
       "Contenido de humedad",
     ],
     imagenes: [
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "./imagenes/servicios/SUELOS1.jpg",
+      "./imagenes/servicios/ESTUDIODESUELOS.png",
+      "./imagenes/servicios/SUELOS3.jpg",
     ],
   },
   concreto: {
@@ -49,9 +49,9 @@ const serviceData = {
       "Ensayo de tracción indirecta",
     ],
     imagenes: [
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "./imagenes/servicios/RESISTENCIALACOMPRESIÓNDELCONCRETO.png",
+      "./imagenes/servicios/concreto.jpg",
+      "./imagenes/servicios/ESCLEROMETRIA.png",
     ],
   },
   supervision: {
@@ -70,9 +70,9 @@ const serviceData = {
       "Acta de recepción de obra",
     ],
     imagenes: [
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "./imagenes/servicios/SUPERVISIÓNObra.jpeg",
+      "./imagenes/servicios/SUPERVISIÓNOBRAS1.jpg",
+      "./imagenes/servicios/SUPERVISIÓNOBRAS2.jpg",
     ],
   },
   topografia: {
@@ -91,9 +91,9 @@ const serviceData = {
       "Planos topográficos en CAD",
     ],
     imagenes: [
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "./imagenes/servicios/LEVANTAMIENTOS_TOPOGRAFICOS.jpg",
+      "./imagenes/servicios/LEVANTAMIENTOSTOPOGRAFICOS1.jpg",
+      "./imagenes/servicios/LEVANTAMIENTOSTOPOGRAFICOS2.jpg",
     ],
   },
   catastro: {
@@ -112,9 +112,9 @@ const serviceData = {
       "Subdivisión de lotes",
     ],
     imagenes: [
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "./imagenes/servicios/REGULARIZACIÓNCATASTRAL.jpg",
+      "./imagenes/servicios/REGULARIZACIONCATASTRAL1.jpg",
+      "./imagenes/servicios/REGULARIZACIONCATASTRAL2.jpg",
     ],
   },
   expedientes: {
@@ -515,9 +515,9 @@ const ensayoData = {
       },
     ],
     imagenes: [
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "imagenes/servicios/SUELOS1.jpg",
+      "imagenes/servicios/SUELOS2.jpg",
+      "imagenes/servicios/SUELOS3.jpg",
     ],
   },
   canteras: {
@@ -538,9 +538,9 @@ const ensayoData = {
       "Peso unitario — MTC E 203",
     ],
     imagenes: [
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "./imagenes/servicios/ESTUDIO_DE_CANTERA.jpg",
+      "./imagenes/clientes/cantera1.jpg",
+      "./imagenes/clientes/cantera2.jpg",
     ],
   },
   albanileria: {
@@ -708,9 +708,9 @@ const ensayoData = {
       "Medida De La deflexión De Un Pavimento Flexible Empleando La Viga Benkelman — MTC E 1002",
     ],
     imagenes: [
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581094794329-8114a89e3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "./imagenes/servicios/VIGA_BENKELMAN.png",
+      "./imagenes/servicios/VIGA_BENKELMAN1.png",
+      "./imagenes/clientes/pavimento1.jpg",
     ],
   },
 };
